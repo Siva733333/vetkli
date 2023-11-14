@@ -1,16 +1,19 @@
 package src;
 
-import javax.xml.namespace.QName;
-import java.util.Scanner;
+import src.command.CommandReader;
 
 public class Main {
 
-    public static void main(String[] args){
-        int code = Autentification.autenticate();
-        if (code == 0){
-            System.out.println("Login success");
-        } else {
-            System.out.println("Login failed");
-        }
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+
+        authenticate();
+
+        CommandReader.startReadCommand();
+    }
+
+    private static void authenticate() {
+        Authentication authentication = new Authentication();
+        authentication.authenticate();
     }
 }

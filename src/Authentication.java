@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Authentication {
 
-    private static final String LOGIN = "slava";
-    private static final String PASSWORD = "123";
+    private static final String LOGIN = "maks";
+    private static final String PASSWORD = "1234";
 
     public void authenticate() {
         Scanner s = new Scanner(System.in);
